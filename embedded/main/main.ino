@@ -16,7 +16,7 @@
 uint16_t temp = 0xA0B1;
 uint8_t bitfield = 0b101;
 
-#define DEBUG 1
+#define DEBUG 0
 
 void setup() {
 
