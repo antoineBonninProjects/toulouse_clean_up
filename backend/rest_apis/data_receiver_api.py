@@ -30,7 +30,7 @@ class DataReceiver():
 
         # Append message to 'sigfox_messages' table
         db_msg = SigFoxMessages()
-        db_msg.device_id = json_msg["device"]
+        db_msg.device_id = json_msg["device_id"]
         db_msg.seq_num = json_msg["seq_num"]
         db_msg.weight = json_msg["weight"]
         db_session.add(db_msg)
@@ -38,7 +38,7 @@ class DataReceiver():
         # Create 'latest_sigfox_messages' table entry or update it if existing for the current device_id
         if db_session.query(LatestSigFoxMessages).filter(LatestSigFoxMessages.device_id == device_id).count() == 0:
             latest_db_msg = LatestSigFoxMessages()
-            latest_db_msg.device_id = json_msg["device"]
+            latest_db_msg.device_id = json_msg["device_id"]
             latest_db_msg.seq_num = json_msg["seq_num"]
             latest_db_msg.weight = json_msg["weight"]
             db_session.add(latest_db_msg)

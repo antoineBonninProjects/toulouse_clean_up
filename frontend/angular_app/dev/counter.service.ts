@@ -7,6 +7,6 @@ export class CounterService {
 	constructor (private _http: Http) {}
 
 	getLatestWeight() {
-		return this._http.get('http://172.20.10.10:5000/api/get_sigfox_messages/latest/weight/1D1901').map(res => res.json());
+		return this._http.get('http://192.168.1.45:5000/api/get_sigfox_messages/latest/weight/1D1901').map(res => res.json());
 	}
 }
