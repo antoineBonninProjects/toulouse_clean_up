@@ -20,7 +20,7 @@ const appRoutes: Routes = [
 	            {
 	              path: 'latest/forall',
 	              component: DataLatestForallComponent
-	            
+	            },
 	            {
 	              path: 'latest/1D1901',
 	              component: DataLatestForOneComponent
