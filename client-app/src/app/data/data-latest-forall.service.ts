@@ -45,4 +45,6 @@ export class DataLatestForallService {
 	        		this.socket.off(event);
 				}
 		});
+	}
 }
+
