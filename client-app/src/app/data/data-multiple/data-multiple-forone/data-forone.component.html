@@ -1,0 +1,18 @@
+<div class="container" id="main">
+  <div class="row">
+    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12">
+      <table class="table table-stripped">
+        <tr class="table-top">
+          <th>SigFox_ID</th>
+          <th>seq#</th>
+          <th>data</th>
+        </tr>
+        <tr class="table-content" *ngFor="let device of allDataForOne">
+          <th>{{device.device_id}}</th>
+          <td>{{device.seq_num}}</td>
+          <td>{{device.weight}}</td>
+        </tr>  	
+      </table>
+    </div>
+  </div>
+</div>
