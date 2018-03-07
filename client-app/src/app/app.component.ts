@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import {ContactComponent} from "./contact/contact.component"
-import {DataComponent} from "./data/data.component"
+import {ContactComponent} from "./contact/contact.component";
+import {DataComponent} from "./data/data.component";
 
 
 @Component({

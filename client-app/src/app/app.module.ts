@@ -6,24 +6,29 @@ import { FormsModule } from '@angular/forms';
 import { appRouting } from './app.routing';
  
 
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
 
-import { ContactComponent } from "./contact/contact.component";
+import { HomeComponent } from "./home/home.component";
 
 import { DataComponent } from "./data/data.component";
-import { DataLatestForOneComponent } from "./data/data-latest-forone.component";
-import { DataLatestForallComponent } from "./data/data-latest-forall.component";
+import { DataLatestForOneComponent } from "./data/data-latest/data-latest-forone/data-latest-forone.component";
+import { DataLatestForallComponent } from "./data/data-latest/data-latest-forall/data-latest-forall.component";
+import { DataMultipleForOneComponent } from "./data/data-multiple/data-multiple-forone/data-forone.component";
 
+
+import { ContactComponent } from "./contact/contact.component";
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent, 
+    HomeComponent,
     DataComponent,
     DataLatestForallComponent,
-    DataLatestForOneComponent
+    DataLatestForOneComponent,
+    DataMultipleForOneComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+
+body, html {
+    height: 100%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("assets/toulouse2.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: scroll;
+}
+
+.jumbotron-billboard {
+    margin-bottom: 0px;
+    opacity: 0.8;
+    color: #fff;
+    background: #000 center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.table-top {
+    opacity: 0.9;
+    color: #fff;
+    background: #000 center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.table-content {
+    opacity: 0.7;
+    color: #fff;
+    background: #000 center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.data-sidebar {
+    opacity: 0.7;
+    background: #000 center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.navbar-custom {
+    opacity: 0.9;
+    color: #fff;
+    background: #000 center center;
+    overflow: hidden;
+}

@@ -75,23 +75,6 @@ class DataReceiver():
 
         return resp_json
 
-    @FlaskApp.route('/api/get_latest_sigfox_messages', methods=['GET'])
-    @crossdomain(origin='*')
-    def get_latest_sigfox_messages():
-        """
-        Returns a 200 OK with the 'latest_sigfox_messages' table content (JSON formatted)
-
-        Returns:
-            json: A json representation of the content of table sigfox_messages with HTTP 200 OK.
-        """
-        db_session = Session()
-        qryresult = db_session.query(LatestSigFoxMessages).all()
-
-        resp_json = jsonify(json_list=[i.serialize for i in qryresult])
-        db_session.close()
-
-        return resp_json
-
     @socket_io.on('my event')
     def handle_my_custom_event(json):
         print('received json: ' + str(json))
